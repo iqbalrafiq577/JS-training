@@ -1,0 +1,332 @@
+:root {
+    --primary-color: #0099ff;
+    --secondary-color: #bcbaba;
+    --background-color: #666;
+    --text-color: #fff;
+    --text-color2:#333;
+    --box-radius: 10px;
+    --box-padding: clamp(10px, 3vw, 20px);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+main{
+    background-color: var(--background-color);
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: clamp(10px, 2vw, 20px) clamp(30px, 5vw, 50px);
+}
+.navbar h1 {
+    font-size: clamp(20px, 4vw, 30px);
+    font-weight: bold;
+    color: var(--text-color);
+}
+.nav-links {
+    display: flex;
+    gap: clamp(10px, 2vw, 20px);
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: clamp(14px, 2vw, 18px);
+}
+.nav-links a:hover{
+    color: var(--primary-color);
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: clamp(20px, 5vw, 50px);
+    text-align: start;
+   
+}
+
+.img-side {
+    width: clamp(250px, 40vw, 500px);
+    padding-left: clamp(10px, 5vw, 40px);
+}
+
+.img-side img {
+    width: 100%;
+    height: auto;
+}
+
+.content-side {
+    width: clamp(250px, 50vw, 600px);
+    padding: clamp(10px, 3vw, 20px);
+}
+
+.content-side h1 {
+    font-size: clamp(28px, 5vw, 45px);
+    margin-bottom: clamp(10px, 2vw, 12px);
+    color: var(--text-color);
+}
+
+span {
+    font-size: clamp(22px, 4vw, 33px);
+    color: var(--primary-color);
+}
+
+.content-side p {
+    margin-bottom: clamp(10px, 2vw, 12px);
+    text-align: justify;
+    color: var(--secondary-color);
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: clamp(20px, 5vw, 50px);
+    text-align: center;
+    
+}
+.image {
+    width: clamp(150px, 30vw, 300px);
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+.about-content {
+    width: clamp(250px, 60vw, 600px);
+    padding: clamp(10px, 4vw, 50px);
+}
+
+.about-content h1 {
+    font-size: clamp(24px, 4vw, 40px);
+    margin-bottom: clamp(10px, 3vw, 20px);
+    color: var(--text-color);
+}
+
+.about-content p {
+    color: var(--secondary-color);
+}
+
+.Skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.Skills h1{
+    color: var(--text-color);
+}
+.Skills p {
+    color: black;
+}
+.Skills h1+p{
+color: var(--secondary-color);
+}
+
+.skill-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    width: clamp(250px, 30vw, 350px);
+    height: 250px;
+    background-color: #bbb;
+    color: black;
+    margin: 20px;
+    border-radius: var(--box-radius);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: var(--box-padding);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+}
+
+.skill-box img {
+    width: clamp(50px, 8vw, 70px);
+    height: auto;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.projects p {
+    color: black;
+
+}
+.projects h1+p{
+    color: var(--secondary-color);
+}
+
+.projects h1 {
+    font-size: clamp(30px, 5vw, 45px);
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.pro-box {
+    width: clamp(280px, 30vw, 350px);
+    background: #bbb;
+    border-radius: var(--box-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin: 20px;
+    padding: var(--box-padding);
+}
+
+.pro-box:hover {
+    transform: translateY(-10px);
+}
+
+.image-part {
+    background: url('mern.jpeg') center/cover no-repeat;
+    height: clamp(150px, 25vw, 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.projects h3 {
+    margin: 15px 10px;
+    font-size: 20px;
+    color: var(--text-color2);
+}
+.projects p {
+    margin: 10px;
+    font-size: 14px;
+    color: var(--text-color2);
+}
+
+button {
+    margin: 15px 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--box-radius);
+    background: var(--primary-color);
+    color: var(--text-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.contact p {
+    color: var(--secondary-color);
+}
+
+form {
+    width: clamp(300px, 70vw, 700px);
+}
+
+input, textarea {
+    width: 100%;
+    margin: 8px;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+}
+
+input[type=submit] {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+
+.footer p{
+    font-size: 18px;
+}
+
+
+.footer {
+    background-color: #bbb;
+    color: var(--text-color2);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: var(--text-color2);
+    font-size: 14px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links li a:hover {
+    color: var(--primary-color);
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons i{
+    width: 30px;
+    height: 30px;
+    color: var(--text-color2);
+    transition: color 0.3s ease-in-out;
+    
+}
+
+.social-icons i:hover{
+    color: var(--primary-color);
+}
