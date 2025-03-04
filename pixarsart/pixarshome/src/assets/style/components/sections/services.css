@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Services {
+    margin-top: clamp(20px, 5vw, 40px); 
+    display: flex;
+    flex-direction: column;
+    padding: clamp(15px, 3vw, 30px); 
+    color: var(--secondary-color);
+}
+
+
+.topHeading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: clamp(15px, 3vw, 30px); 
+    flex-wrap: wrap;
+}
+
+.topHeading p {
+    font-size: clamp(16px, 2.5vw, 20px); 
+    margin: clamp(10px, 2vw, 20px) 0; 
+}
+
+.serviceHeading {
+    display: flex;
+    flex-direction: column;
+}
+
+.serviceHeading h3 {
+    font-size: clamp(18px, 3vw, 24px);
+}
+
+.serviceHeading h2 {
+    font-size: clamp(24px, 4vw, 32px); 
+    margin-top: clamp(5px, 1vw, 10px); 
+}
+
+.serviceBtn {
+    width: clamp(100px, 10vw, 150px); 
+    height: clamp(100px, 10vw, 150px);
+    border-radius: 50%;
+    font-size: clamp(14px, 2vw, 18px); 
+    cursor: pointer;
+}
+
+.serviceBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: clamp(15px, 3vw, 30px); 
+    flex-wrap: wrap; 
+}
+
+.serviceBox h1 {
+    font-size: clamp(20px, 3vw, 32px);
+    margin: 0 clamp(10px, 2vw, 20px); 
+}
+
+.serviceBox p {
+    font-size: clamp(14px, 2vw, 18px);
+    margin: 0 clamp(10px, 2vw, 20px); 
+    flex: 1; 
+}
+
+.serviceBox button {
+    font-size: clamp(14px, 2vw, 18px);
+    padding: clamp(5px, 1vw, 10px) clamp(10px, 2vw, 20px); 
+    cursor: pointer;
+}
+
+hr {
+    border: 1px solid var(--secondary-color);
+    margin: clamp(10px, 2vw, 20px) 0; 
+}
+
+@media (max-width: 768px) {
+    .topHeading {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .serviceBox {
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+    .serviceBox h1,
+    .serviceBox p,
+    .serviceBox button {
+        margin: clamp(5px, 1vw, 10px) 0; 
+    }
+}

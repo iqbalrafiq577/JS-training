@@ -1,0 +1,11 @@
+.commonBtn{
+    width: clamp(100px, 10vw, 150px); 
+    height: clamp(100px, 10vw, 150px);
+    border-radius: 50%;
+    font-size: clamp(14px, 2vw, 18px); 
+    cursor: pointer;
+}
+.commonBtn:hover{
+    background-color: var(--button-hover);
+    color: white;
+}

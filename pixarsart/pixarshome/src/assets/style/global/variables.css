@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #38215A;
+    --secondary-color: #FFFFFF;
+    --background-color: rgba(0, 0, 0, 0.9);
+    --button-hover:rgb(52, 249, 52);
+
+   
+    --font-size-small: clamp(14px, 2vw, 16px);
+    --font-size-medium: clamp(18px, 3vw, 24px);
+    --font-size-large: clamp(24px, 6vw, 40px);
+    --font-size-xlarge: clamp(40px, 10vw, 80px);
+
+   
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 32px;
+
+    --z-index-low: 10;
+    --z-index-medium: 100;
+    --z-index-high: 1000;
+}

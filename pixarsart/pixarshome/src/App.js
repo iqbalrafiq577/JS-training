@@ -1,25 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
-import TopBar from './components/TopBar';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
-import Certification from './components/Certifications';
-import Services from './components/Services';
-import Technologies from './components/technologies';
-import BookConsultation from './components/BookConsultation';
+import TopBar from './components/layout/TopBar';
+import Hero from './components/sections/Hero';
+import Navbar from './components/layout/Navbar';
+import Certification from './components/sections/Certifications';
+import Services from './components/sections/Services';
+import Technologies from './components/sections/technologies';
+import BookConsultation from './components/sections/BookConsultation';
 import Cards from './components/cards';
-import WhoWeAre from './components/WhoWeAre';
-import WhoWe from './components/WhoWeAre';
-import Brands from './components/Brands';
-import SubHero from './components/SubHero';
-import PressRelease from './components/PressRelease';
-import ContactUs from './components/ContactUs';
-import Footer from './components/Footer';
-import "./assets/style/variables.css";
+import WhoWeAre from './components/sections/WhoWeAre';
+import WhoWe from './components/sections/WhoWeAre';
+import Brands from './components/sections/Brands';
+import SubHero from './components/sections/SubHero';
+import PressRelease from './components/sections/PressRelease';
+import ContactUs from './pages/ContactUs';
+import Footer from './components/layout/Footer';
+import "./assets/style/global/variables.css";
+import GlobalClients from './components/sections/GlobalClients';
+import ClientReview from './components/sections/ClientReview';
+import Testimonials from './components/sections/Testimonials';
 
 function App() {
   return (
     <div className="App">
+      
      <TopBar/>
      <Navbar/>
      <Hero/>
@@ -30,9 +34,12 @@ function App() {
     <WhoWe/>
      <Cards/>
      <Brands/>
+     <ClientReview/>
+     <Testimonials/>
      <SubHero/>
      <PressRelease/>
      <ContactUs/>
+     <GlobalClients/>
      <Footer/>
     </div>
   );

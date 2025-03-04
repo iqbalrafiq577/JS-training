@@ -1,0 +1,81 @@
+/* navbar.css */
+:root {
+    --spacing-medium: 10px;
+    --spacing-large: 20px;
+    --z-index-high: 1000;
+    --secondary-color: #333;
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --background-color: #fff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-medium) var(--spacing-large);
+    background-color: transparent;
+    top: 70px;
+    position: fixed;
+ 
+    left: 0;
+    width: 100%;
+    z-index: var(--z-index-high);
+    
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .navlinks {
+    display: flex;
+    gap: var(--spacing-medium);
+  }
+  
+  .navlinks ul {
+    display: flex;
+    gap: var(--spacing-medium);
+    list-style: none;
+  }
+  
+  .navlinks li {
+    color: var(--secondary-color);
+    font-size: var(--font-size-small);
+  }
+  
+  .navToggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .navlinks {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--background-color);
+      padding: var(--spacing-medium);
+    }
+  
+    .navlinks.visible {
+      display: flex;
+    }
+  
+    .navToggle {
+      display: block;
+    }
+  }

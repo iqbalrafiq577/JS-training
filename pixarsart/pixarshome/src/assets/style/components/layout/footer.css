@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary-color);
+    text-align: left;
+}
+.logoIcons img{
+    height: 80px;
+}
+.topFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: clamp(20px, 4vw, 30px);
+    gap: clamp(10px, 2vw, 20px);
+}
+
+.pContent {
+    max-width: clamp(300px, 40vw, 500px);
+}
+
+.topFooter ul {
+    list-style: none;
+    padding: 0;
+}
+
+.midFooter {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: left;
+  
+}
+
+.midFooter ul {
+    list-style: none;
+    margin-top: clamp(10px, 2vw, 20px);
+}
+
+.midFooter li {
+    margin-top: clamp(10px, 2vw, 20px);
+}
+
+.rightElement {
+    border: 1px solid black;
+    padding: clamp(20px, 3vw, 30px);
+    background-color: white;
+    width: 400px;
+    color: black;
+}
+.adressForm input {
+    width: 100%;
+    margin-top: clamp(8px, 1.5vw, 16px);
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #d7d2d2;
+    padding: clamp(5px, 1vw, 10px);
+    border-radius: 5px;
+}
+.formBtn{
+    border: none;
+    background-color: rgb(41, 110, 230);
+    color: white ;
+    border-radius: 5px;
+}
+
+.group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(5px, 1vw, 10px);
+}
+
+.group input {
+    flex: 1 1 48%;
+}
+
+.formBtn {
+    width: clamp(100px, 8vw, 120px);
+    height: clamp(25px, 3vw, 30px);
+    margin-top: clamp(10px, 2vw, 20px);
+}
+
+.bottomFooter {
+    text-align: center;
+   
+}

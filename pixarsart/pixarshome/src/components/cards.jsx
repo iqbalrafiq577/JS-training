@@ -1,9 +1,7 @@
+import "../assets/style/cards.css";
 
-
-import "../assets/style/cards.css"
-
-function Cards(){
-    return(
+function Cards() {
+    return (
         <div className="main-cards">
             <div className="card">
                 <h1>World Economic Forum</h1>
@@ -33,6 +31,7 @@ function Cards(){
                 <h1>World Economic Forum</h1>
             </div>
         </div>
-    )
+    );
 }
+
 export default Cards;
